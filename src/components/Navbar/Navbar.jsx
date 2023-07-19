@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { BsSearch } from "react-icons/bs";
+import Toggle from "../Toggle/Toggle";
 
 const Navbar = () => {
   return (
@@ -13,7 +14,9 @@ const Navbar = () => {
       </div>
       <div className="navbar_user">
         <div className="nav_user_notification">
-          <button></button>
+          <span>
+            <Toggle />
+          </span>
           <button></button>
           <button></button>
         </div>
