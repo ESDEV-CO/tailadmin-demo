@@ -103,3 +103,15 @@ button {
   cursor: pointer;
   background: transparent;
 }
+
+@media (min-width:1024px) {
+
+  .Aside {
+    flex: 2;
+    background: var(--pri_clr);
+  }
+
+  .Dashboard {
+    flex: 8;
+  }
+}
