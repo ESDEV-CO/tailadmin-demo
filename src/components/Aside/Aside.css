@@ -4,18 +4,24 @@ button {
 }
 
 .asideBar {
-    padding-inline: 1.5rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
-.logo {
+.aside_logo {
     display: flex;
     gap: 1rem;
     padding: 1.625rem 0;
 }
 
-.logo h1 {
+.aside_logo h1 {
     color: white;
     font-size: 1.75rem;
+}
+
+.aside_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
 }
 
 .aside_comp {
@@ -41,7 +47,20 @@ button {
     background: #333A48;
 }
 
-.aside_comp_subs div {
+.subs_heading {
     display: flex;
+    align-items: center;
     gap: 1rem;
+}
+
+.subs_message span {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.625rem;
+    background-color: var(--chart_icon);
+    border-radius: 0.25rem;
+}
+
+.subs_message {
+    gap: 0.625rem;
 }
