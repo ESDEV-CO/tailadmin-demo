@@ -7,12 +7,10 @@ import Aside from "./components/Aside/Aside";
 const App = () => {
   return (
     <div className="dash_container">
-      <aside className="Navbar">
+      <aside className="Aside">
         <Aside />
       </aside>
-      <div className="Dashboard">
-        <Dashboard />
-      </div>
+      <div className="Dashboard">{/* <Dashboard /> */}</div>
     </div>
   );
 };
