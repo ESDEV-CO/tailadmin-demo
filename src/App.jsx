@@ -10,7 +10,9 @@ const App = () => {
       <aside className="Aside">
         <Aside />
       </aside>
-      <div className="Dashboard">{/* <Dashboard /> */}</div>
+      <div className="Dashboard">
+        <Dashboard />
+      </div>
     </div>
   );
 };

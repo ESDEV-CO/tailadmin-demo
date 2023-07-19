@@ -5,12 +5,10 @@ import Navbar from "../Navbar/Navbar";
 const Dashboard = () => {
   return (
     <section>
-      <div className="navbar">
+      <div className="dash_nav">
         <Navbar />
       </div>
-      <div className="dashboard">
-        <h1>Hello</h1>
-      </div>
+      <div className="dashboard"></div>
     </section>
   );
 };

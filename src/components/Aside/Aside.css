@@ -41,6 +41,8 @@ button {
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    gap: 0.625rem;
+
 }
 
 .bg_active {
@@ -62,5 +64,6 @@ button {
 }
 
 .subs_message {
+    display: flex;
     gap: 0.625rem;
 }

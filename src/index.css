@@ -42,10 +42,6 @@ a {
   color: inherit;
 }
 
-section {
-  margin-top: 1.25rem;
-}
-
 .dash_container {
   display: flex;
 }

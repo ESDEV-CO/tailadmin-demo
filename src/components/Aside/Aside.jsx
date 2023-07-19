@@ -22,10 +22,10 @@ const Aside = () => {
         <img src={require("../../assets/logo-icon.png")} alt="logo" />
         <h1>TailAdmin</h1>
       </div>
-      <div className="aside_container">
-        <div className="aside_comp">
+      <div className="aside_container ">
+        <div className="aside_comp | menu">
           <h4>Menu</h4>
-          <button className="aside_comp_subs bg_active">
+          <button className="aside_comp_subs | bg_active ">
             <div className="subs_heading">
               <span>
                 <RxDashboard />
@@ -36,7 +36,7 @@ const Aside = () => {
               <AiOutlineDown />
             </span>
           </button>
-          <button className="aside_comp_subs ">
+          <button className="aside_comp_subs">
             <div className="subs_heading">
               <span>
                 <IoCalendarOutline />
@@ -97,7 +97,7 @@ const Aside = () => {
             </span>
           </button>
         </div>
-        <div className="aside_comp">
+        <div className="aside_comp | support">
           <h4>Support</h4>
           <button className="aside_comp_subs">
             <div className="subs_heading">
@@ -133,7 +133,7 @@ const Aside = () => {
             </div>
           </button>
         </div>
-        <div className="aside_comp">
+        <div className="aside_comp | Others">
           <h4>Others</h4>
           <button className="aside_comp_subs">
             <div className="subs_heading">
