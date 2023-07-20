@@ -105,8 +105,15 @@
     font-size: .875rem;
     line-height: 1.25rem;
     font-weight: 500;
+    color: #444B58;
 }
 
+.user_info :nth-child(2) {
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    color: #B2BAC6;
+}
 
 .nav_user_login img {
     width: 3rem;
