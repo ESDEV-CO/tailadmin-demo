@@ -1,0 +1,52 @@
+.graphs1 {
+    display: flex;
+    margin-inline: 1.5rem;
+    gap: 1.5rem;
+}
+
+.graphs1_areachart {
+    flex: 2;
+    background: white;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.graphs1_barchart {
+    flex: 1;
+    background: white;
+    padding: 1.25rem;
+
+}
+
+.areachart_legends {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.legends_radio {
+    display: flex;
+    color: var(--card_icon);
+}
+
+.legends_info h2 {
+    color: var(--card_icon);
+
+}
+
+.legends_radio2 {
+    display: flex;
+    color: #80CAEE;
+}
+
+.legends_info2 h2 {
+    color: #80CAEE;
+
+}
+
+.areachart_days {
+    display: flex;
+    padding: 0.375rem;
+}

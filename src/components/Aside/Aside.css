@@ -59,7 +59,7 @@ button {
     font-size: 0.75rem;
     font-weight: 500;
     padding: 0.25rem 0.625rem;
-    background-color: var(--chart_icon);
+    background-color: var(--card_icon);
     border-radius: 0.25rem;
 }
 
