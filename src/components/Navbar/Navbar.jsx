@@ -1,7 +1,10 @@
 import React from "react";
 import "./Navbar.css";
-import { BsSearch } from "react-icons/bs";
 import Toggle from "../Toggle/Toggle";
+import { BsSearch } from "react-icons/bs";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { AiOutlineMessage } from "react-icons/ai";
+import { AiOutlineDown } from "react-icons/ai";
 
 const Navbar = () => {
   return (
@@ -17,10 +20,23 @@ const Navbar = () => {
           <span>
             <Toggle />
           </span>
-          <button></button>
-          <button></button>
+          <button className="nav_user_notification_btn">
+            <IoMdNotificationsOutline />
+          </button>
+          <button className="nav_user_notification_btn">
+            <AiOutlineMessage />
+          </button>
         </div>
-        <div className="nav_user_login"></div>
+        <button className="nav_user_login">
+          <div className="user_info">
+            <span>Shahab Yaseen</span>
+            <span>UX Designer</span>
+          </div>
+          <img src={require("../../assets/shahab.png")} alt="user pic" />
+          <span>
+            <AiOutlineDown />
+          </span>
+        </button>
       </div>
     </div>
   );

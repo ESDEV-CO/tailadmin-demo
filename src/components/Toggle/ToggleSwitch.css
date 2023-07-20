@@ -7,7 +7,6 @@
     width: 75px;
     display: inline-block;
     text-align: left;
-    top: 8px;
 }
 
 .checkbox {
@@ -42,16 +41,16 @@
 }
 
 .inner:before {
-    content: "YES";
+    content: "";
     padding-left: 10px;
-    background-color: #060;
+    background-color: var(--pri_clr);
     color: #fff;
 }
 
 .inner:after {
-    content: "NO";
+    content: '';
     padding-right: 10px;
-    background-color: #bbb;
+    background-color: var(--aside_txt);
     color: #fff;
     text-align: right;
 }
@@ -68,6 +67,10 @@
     border: 0 solid #bbb;
     border-radius: 20px;
     transition: all 0.3s ease-in 0s;
+}
+
+.switch:before {
+    content: url(../../assets/sun.png);
 }
 
 .checkbox:checked+.label .inner {
