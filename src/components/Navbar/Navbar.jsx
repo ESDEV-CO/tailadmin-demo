@@ -28,9 +28,9 @@ const Navbar = () => {
           </button>
         </div>
         <button className="nav_user_login">
-          <div className="user_info">
+          <div className="nav_user_info">
             <span>Shahab Yaseen</span>
-            <span>UX Designer</span>
+            <h6>UX Designer</h6>
           </div>
           <img src={require("../../assets/shahab.png")} alt="user pic" />
           <span>

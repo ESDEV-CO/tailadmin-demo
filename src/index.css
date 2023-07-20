@@ -17,7 +17,7 @@
   --crd_bg: #3C50E0;
 
 
-  --chart_icon: #3C50E0;
+  --card_icon: #3C50E0;
   --aside_icon: #DEE4EE;
   --aside_txt: #8A99AF;
 
@@ -42,6 +42,10 @@ a {
   color: inherit;
 }
 
+section {
+  margin-top: 1rem;
+}
+
 .dash_container {
   display: flex;
 }
@@ -58,6 +62,7 @@ a {
 h1 {
   font-size: 1.5rem;
   font-weight: 700;
+  line-height: 1.875rem;
   color: var(--txt_clr);
 }
 
@@ -83,9 +88,16 @@ h4 {
 }
 
 h5 {
-  font-size: 0.85rem;
-  font-weight: 300;
-  line-height: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: var(--sec_clr);
+}
+
+h6 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1rem;
   color: var(--sec_clr);
 }
 
