@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import Cards from "../Cards/Cards";
 import Graphs1 from "../Graphs1/Graphs1";
 import Graphs2 from "../Graphs2/Graphs2";
-import Table from "../Table/Table";
+// import Table from "../Table/Table";
 import Chat from "../Chat/Chat";
 
 const Dashboard = () => {

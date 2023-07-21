@@ -1,32 +1,53 @@
-import React from "react";
-import { Chart } from "react-google-charts";
-const Areachart = () => {
-  const data = [
-    ["Year", "", ""],
-    ["Today", 14, 11],
-    ["Yesterday", 18, 18],
-    ["07/04", 25, 30],
-    ["06/04", 11, 25],
-  ];
-  const options = {
-    vAxis: { minValue: 0 },
-    chartArea: { width: "80%", height: "70%" },
-    series: {
-      0: { color: "#EC5C42", curveType: "function" },
-      1: { color: "#289995", curveType: "function" },
+import Chart from "chart.js/auto";
+import { CategoryScale } from "chart.js";
+import { Pie, Line } from "react-chartjs-2";
+
+Chart.register(CategoryScale);
+
+const data = {
+  labels: ["Red", "Orange", "Blue"],
+  datasets: [
+    {
+      label: "Popularity of colours",
+      data: [55, 23, 96],
+      backgroundColor: [
+        "rgba(60, 80, 224, 1)",
+        "rgba(128, 202, 238, 1)",
+        "rgba(130, 205, 240, 0.6)",
+      ],
+      borderWidth: 1,
     },
-    curveType: "function",
-    legend: "none",
-  };
-  return (
-    <Chart
-      chartType="AreaChart"
-      width="100%"
-      height="400px"
-      data={data}
-      options={options}
-    />
-  );
+  ],
 };
 
-export default Areachart;
+function MyChart() {
+  return (
+    <div className="App">
+      <Pie
+        data={data}
+        options={{
+          plugins: {
+            title: {
+              display: true,
+              text: "Users Gained between 2016-2020",
+            },
+          },
+        }}
+      />
+
+      <Line
+        data={data}
+        options={{
+          plugins: {
+            title: {
+              display: true,
+              text: "Users Gained between 2016-2020",
+            },
+          },
+        }}
+      />
+    </div>
+  );
+}
+
+export default MyChart;
