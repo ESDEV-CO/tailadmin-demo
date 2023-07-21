@@ -2,7 +2,7 @@ import React from "react";
 import "./Graphs1.css";
 
 import { IoIosRadioButtonOn } from "react-icons/io";
-import MyChart from "../Charts/Areachart";
+import { LineChart, BarChart } from "../Charts/Charts";
 
 const Graphs1 = () => {
   return (
@@ -33,12 +33,12 @@ const Graphs1 = () => {
         </div>
         <div className="areachart_graph">
           {/* <img src={require("../../assets/graph1.png")} alt="area chart" /> */}
-          <div id="chart">
-            <MyChart />
-          </div>
+          <LineChart />
         </div>
       </div>
-      <div className="graphs1_barchart"></div>
+      <div className="graphs1_barchart">
+        <BarChart />
+      </div>
     </div>
   );
 };
