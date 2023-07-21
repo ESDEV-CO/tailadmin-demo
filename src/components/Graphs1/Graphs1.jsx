@@ -2,7 +2,6 @@ import React from "react";
 import "./Graphs1.css";
 
 import { IoIosRadioButtonOn } from "react-icons/io";
-import { LineChart, BarChart } from "../Charts/Charts";
 import AreaChart from "../Charts/Areachart";
 import Stackedbar from "../Charts/Stackedbar";
 import { AiOutlineDown } from "react-icons/ai";

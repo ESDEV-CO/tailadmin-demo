@@ -86,8 +86,8 @@ h4 {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.25rem;
-  color: var(--aside_txt);
-  text-transform: uppercase;
+  color: var(--txt_clr);
+
 }
 
 h5 {

@@ -1,0 +1,49 @@
+/* DonutPieChart.css */
+
+/* Custom styling for the legend */
+.chart-legend ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.chart-legend li {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.chart-legend li::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 8px;
+    border-radius: 50%;
+    /* Make the legend rectangles circular */
+}
+
+/* Custom colors for the legend circles */
+.chart-legend li:nth-child(1)::before {
+    background-color: #3C50E0;
+}
+
+.chart-legend li:nth-child(2)::before {
+    background-color: #6577F3;
+}
+
+.chart-legend li:nth-child(3)::before {
+    background-color: #8FD0EF;
+}
+
+.chart-legend li:nth-child(4)::before {
+    background-color: #0FADCF;
+}
+
+/* Adjust the size of the chart container to prevent stretching */
+.chart-container {
+    max-width: 400px;
+    margin: 0 auto;
+}

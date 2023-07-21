@@ -31,9 +31,12 @@ button {
     gap: 0.375rem;
 }
 
+
 .aside_comp h4 {
     padding-left: 1rem;
     padding-bottom: 0.625rem;
+    color: var(--aside_txt);
+    text-transform: uppercase;
 }
 
 .aside_comp_subs {
