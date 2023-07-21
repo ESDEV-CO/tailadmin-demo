@@ -4,6 +4,8 @@
     justify-content: space-evenly;
     gap: 1.5rem;
     padding: 1.5rem;
+    flex-wrap: wrap;
+
 }
 
 .cards_card {
@@ -14,7 +16,6 @@
     background: white;
     padding: 1.5rem 1.875rem;
     box-shadow: 0px 8px 13px -3px var(--sec_color);
-    flex-wrap: wrap;
 }
 
 .card_icon {

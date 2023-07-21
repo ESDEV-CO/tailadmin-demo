@@ -5,7 +5,7 @@ import { IoIosRadioButtonOn } from "react-icons/io";
 import { LineChart, BarChart } from "../Charts/Charts";
 import AreaChart from "../Charts/Areachart";
 import Stackedbar from "../Charts/Stackedbar";
-
+import { AiOutlineDown } from "react-icons/ai";
 const Graphs1 = () => {
   return (
     <div className="graphs1">
@@ -39,7 +39,27 @@ const Graphs1 = () => {
         </div>
       </div>
       <div className="graphs1_barchart">
-        <Stackedbar />
+        <div className="barchat_info">
+          <div className="barchat_info_heading">
+            <h2>Profit this week</h2>
+            <button>
+              Monthly <AiOutlineDown />
+            </button>
+          </div>
+          <div className="barchat_info_legends">
+            <span className="legends_radio">
+              <IoIosRadioButtonOn />
+              <h6>Sales</h6>
+            </span>
+            <span className="legends_radio2">
+              <IoIosRadioButtonOn />
+              <h6>Revenue</h6>
+            </span>
+          </div>
+        </div>
+        <div className="barchat_graph">
+          <Stackedbar />
+        </div>
       </div>
     </div>
   );

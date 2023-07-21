@@ -38,6 +38,17 @@ const StackedBarChart = () => {
         display: false,
       },
     },
+    responsive: true, // Enable responsiveness
+    maintainAspectRatio: false, // Disable aspect ratio for custom sizing
+    layout: {
+      padding: {
+        left: 10,
+        right: 10,
+        top: 10,
+        bottom: 10,
+      },
+    },
+    barPercentage: 0.6, // Set the width of the bars (0.6 means 60% of the available space)
   };
 
   return <Bar data={data} options={options} />;
