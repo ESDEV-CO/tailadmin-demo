@@ -2,7 +2,6 @@ import React from "react";
 import "./Graphs2.css";
 import DonutPieChart from "../Charts/DonutPieChart";
 import { AiOutlineDown } from "react-icons/ai";
-import MapArea from "../Maparea/Maparea";
 
 const Graphs2 = () => {
   return (
@@ -18,9 +17,7 @@ const Graphs2 = () => {
           <DonutPieChart />
         </div>
       </div>
-      <div className="graph2_second">
-        <MapArea />
-      </div>
+      <div className="graph2_second"></div>
     </div>
   );
 };
