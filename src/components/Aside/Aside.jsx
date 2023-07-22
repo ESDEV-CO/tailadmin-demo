@@ -162,7 +162,7 @@ const Aside = () => {
               <span>
                 <HiArrowRightOnRectangle />
               </span>
-              <h3>UI Elements</h3>
+              <h3>Authentication</h3>
             </div>
             <span>
               <AiOutlineDown />
