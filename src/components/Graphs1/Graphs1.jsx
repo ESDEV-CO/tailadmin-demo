@@ -2,9 +2,8 @@ import React from "react";
 import "./Graphs1.css";
 
 import { IoIosRadioButtonOn } from "react-icons/io";
-import AreaChart from "../Charts/Areachart";
-import Stackedbar from "../Charts/Stackedbar";
 import { AiOutlineDown } from "react-icons/ai";
+import { BarChart, LineChart } from "../Charts/Charts";
 const Graphs1 = () => {
   return (
     <div className="graphs1">
@@ -34,7 +33,7 @@ const Graphs1 = () => {
         </div>
         <div className="areachart_graph">
           {/* <img src={require("../../assets/graph1.png")} alt="area chart" /> */}
-          <AreaChart />
+          <LineChart />
         </div>
       </div>
       <div className="graphs1_barchart">
@@ -57,7 +56,7 @@ const Graphs1 = () => {
           </div>
         </div>
         <div className="barchat_graph">
-          <Stackedbar />
+          <BarChart />
         </div>
       </div>
     </div>
