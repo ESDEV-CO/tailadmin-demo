@@ -33,7 +33,6 @@ const Graphs1 = () => {
           </div>
         </div>
         <div className="areachart_graph">
-          {/* <img src={require("../../assets/graph1.png")} alt="area chart" /> */}
           <AreaChart />
         </div>
       </div>
@@ -48,11 +47,11 @@ const Graphs1 = () => {
           <div className="barchat_info_legends">
             <span className="legends_radio">
               <IoIosRadioButtonOn />
-              <h6>Sales</h6>
+              <h6>Revenue</h6>
             </span>
             <span className="legends_radio2">
               <IoIosRadioButtonOn />
-              <h6>Revenue</h6>
+              <h6>Sales</h6>
             </span>
           </div>
         </div>

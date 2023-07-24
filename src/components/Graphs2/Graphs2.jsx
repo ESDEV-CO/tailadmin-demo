@@ -17,7 +17,9 @@ const Graphs2 = () => {
           <DonutPieChart />
         </div>
       </div>
-      <div className="graph2_second"></div>
+      <div className="graph2_second">
+        <img src={require("../../assets/map.png")} alt="Map" />
+      </div>
     </div>
   );
 };

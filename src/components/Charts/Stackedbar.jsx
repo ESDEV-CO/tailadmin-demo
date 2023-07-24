@@ -1,26 +1,28 @@
 import Chart from "chart.js/auto";
-import { CategoryScale } from "chart.js";
+import { CategoryScale, LinearScale } from "chart.js";
 import { Bar } from "react-chartjs-2";
 
-Chart.register(CategoryScale);
+Chart.register(CategoryScale, LinearScale);
 
 const StackedBarChart = () => {
   const data = {
     labels: ["J", "F", "M", "A", "M", "J", "J"],
     datasets: [
       {
-        label: "Data Set 1",
-        data: [40, 50, 30, 60, 45, 35, 55],
-        backgroundColor: "rgba(60, 80, 224, 0.5)", // #3C50E0 with alpha 0.5
-        borderColor: "rgba(60, 80, 224, 1)", // Solid border color
+        label: "Revenue",
+        data: [40, 50, 30, 55, 45, 35, 55],
+        backgroundColor: "rgba(60, 80, 224, 0.5)",
+        borderColor: "rgba(60, 80, 224, 1)",
         borderWidth: 1,
+        stack: "stack1",
       },
       {
-        label: "Data Set 2",
+        label: "sales",
         data: [30, 35, 25, 20, 40, 45, 35],
-        backgroundColor: "rgba(128, 202, 238, 0.5)", // #80CAEE with alpha 0.5
-        borderColor: "rgba(128, 202, 238, 1)", // Solid border color
+        backgroundColor: "rgba(128, 202, 238, 0.5)",
+        borderColor: "rgba(128, 202, 238, 1)",
         borderWidth: 1,
+        stack: "stack1",
       },
     ],
   };
@@ -31,8 +33,8 @@ const StackedBarChart = () => {
         display: false,
       },
     },
-    responsive: true, // Enable responsiveness
-    maintainAspectRatio: false, // Disable aspect ratio for custom sizing
+    responsive: true,
+    maintainAspectRatio: false,
     layout: {
       padding: {
         left: 10,
@@ -41,7 +43,20 @@ const StackedBarChart = () => {
         bottom: 10,
       },
     },
-    barPercentage: 0.6, // Set the width of the bars (0.6 means 60% of the available space)
+    barPercentage: 0.6,
+    scales: {
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true,
+        suggestedMin: 0, // Set the minimum value of the y-axis
+        suggestedMax: 100, // Set the maximum value of the y-axis
+        ticks: {
+          stepSize: 20, // Set the interval between ticks on the y-axis
+        },
+      },
+    },
   };
 
   return <Bar data={data} options={options} />;

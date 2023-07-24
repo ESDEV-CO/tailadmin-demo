@@ -1,3 +1,4 @@
+import React from "react";
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
@@ -17,8 +18,10 @@ const DonutPieChart = () => {
   };
 
   const options = {
-    cutoutPercentage: 70, // Adjust this value to control the width of the donut circle
+    cutoutPercentage: 90, // Adjust this value to make the donut circle wider
     responsive: true,
+    maintainAspectRatio: false, // Set this to false to allow aspectRatio customization
+    aspectRatio: 2, // Adjust this value to make the chart wider (higher value) or taller (lower value)
     plugins: {
       legend: {
         display: true,
