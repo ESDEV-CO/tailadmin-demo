@@ -1,6 +1,5 @@
 import React from "react";
 import "./Dashboard.css";
-import Navbar from "../Navbar/Navbar";
 import Cards from "../Cards/Cards";
 import Graphs1 from "../Graphs1/Graphs1";
 import Graphs2 from "../Graphs2/Graphs2";
