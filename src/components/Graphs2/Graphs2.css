@@ -9,14 +9,15 @@
     flex: 1;
     background: white;
     padding: 1.25rem;
-
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .graph2_second {
     flex: 2;
     background: white;
     padding: 1.25rem;
-
 }
 
 .first_info {
@@ -36,5 +37,59 @@
 }
 
 .first_graph {
+    height: 60%;
+}
+
+.legend_1 {
+    color: #3C50E0;
+    margin-right: 0.5rem;
+}
+
+.legend_2 {
+    color: #6577F3;
+    margin-right: 0.5rem;
+}
+
+.legend_3 {
+    color: #8FD0EF;
+    margin-right: 0.5rem;
+}
+
+.legend_4 {
+    color: #0FADCF;
+    margin-right: 0.5rem;
+}
+
+.first_legends {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 20%;
+}
+
+.legends {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+.g2_legends_info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.second_info {
+    height: 20%;
+}
+
+.second_graph {
     height: 80%;
+}
+
+.second_graph img {
+    width: 100%;
+    height: 100%;
 }

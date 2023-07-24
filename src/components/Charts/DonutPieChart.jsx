@@ -24,7 +24,7 @@ const DonutPieChart = () => {
     aspectRatio: 2, // Adjust this value to make the chart wider (higher value) or taller (lower value)
     plugins: {
       legend: {
-        display: true,
+        display: false,
         position: "bottom",
       },
     },

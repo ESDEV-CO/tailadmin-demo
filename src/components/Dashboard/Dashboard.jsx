@@ -9,11 +9,11 @@ import Chat from "../Chat/Chat";
 
 const Dashboard = () => {
   return (
-    <div className="dashboard">
+    <div className="dashboard_main">
       <div className="dash_nav">
         <Navbar />
       </div>
-      <div className="dashboard">
+      <div className="dash_dash">
         <section className="dashboard_cards">
           <Cards />
         </section>
