@@ -12,20 +12,70 @@
     gap: 0.725rem;
 }
 
+.first_user {
+    position: relative;
+
+}
+
 .chat_user_info img {
     width: 3.5rem;
 }
 
+.online_status::before {
+    content: '';
+    position: absolute;
+    width: 0.85rem;
+    height: 0.85rem;
+    background: #10B981;
+    border-radius: 50%;
+    bottom: 0.25rem;
+    right: 0;
+}
+
+
 .chat_user_detail {
-    font-size: 1rem;
-    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.chat_user_detail div {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
 }
 
 .chat_span {
     font-size: 0.75rem;
     font-weight: 500;
-    padding: 0.25rem 0.625rem;
+    padding: 0.25rem 0.5rem;
     background-color: var(--card_icon);
-    border-radius: 0.25rem;
+    border-radius: 50%;
     color: white;
+}
+
+.read_opacity {
+    opacity: 0.7;
+}
+
+.away_status::before {
+    content: '';
+    position: absolute;
+    width: 0.85rem;
+    height: 0.85rem;
+    background: #FFBA00;
+    border-radius: 50%;
+    bottom: 0.25rem;
+    right: 0;
+}
+
+.offline_status::before {
+    content: '';
+    position: absolute;
+    width: 0.85rem;
+    height: 0.85rem;
+    background: #FF6766;
+    border-radius: 50%;
+    bottom: 0.25rem;
+    right: 0;
 }
