@@ -31,12 +31,6 @@ const AreaChart = () => {
   };
 
   const options = {
-    scales: {
-      y: {
-        beginAtZero: true,
-        max: 100,
-      },
-    },
     plugins: {
       legend: {
         display: false,

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Graphs2.css";
 import { AiOutlineDown } from "react-icons/ai";
-import { PieChart } from "../Charts/Charts";
+import DonutPieChart from "../Charts/DonutPieChart";
 
 const Graphs2 = () => {
   return (
@@ -14,7 +14,7 @@ const Graphs2 = () => {
           </button>
         </div>
         <div className="first_graph">
-          <PieChart />
+          <DonutPieChart />
         </div>
       </div>
       <div className="graph2_second"></div>
