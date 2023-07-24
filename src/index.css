@@ -101,7 +101,6 @@ h2 {
 h3 {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--aside_icon);
 }
 
 h4 {
@@ -116,14 +115,12 @@ h5 {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.25rem;
-  color: var(--sec_clr);
 }
 
 h6 {
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 1rem;
-  color: var(--sec_clr);
 }
 
 textarea:focus,

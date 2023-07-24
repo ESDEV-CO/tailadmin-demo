@@ -101,6 +101,10 @@
     flex-direction: column;
 }
 
+.nav_user_info h6 {
+    color: var(--sec_clr);
+}
+
 .nav_user_info :first-child {
     font-size: .875rem;
     line-height: 1.25rem;

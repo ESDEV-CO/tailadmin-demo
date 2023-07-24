@@ -58,6 +58,10 @@ button {
     gap: 1rem;
 }
 
+.subs_heading h3 {
+    color: var(--aside_icon);
+}
+
 .subs_message span {
     font-size: 0.75rem;
     font-weight: 500;

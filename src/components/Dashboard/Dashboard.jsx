@@ -28,7 +28,12 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="dash_chat">
-          <Chat />
+          <div className="chat_info">
+            <h2>Chats</h2>
+          </div>
+          <div className="chat_data">
+            <Chat />
+          </div>
         </div>
       </section>
     </div>

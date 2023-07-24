@@ -50,6 +50,11 @@
 
 }
 
+.legends_info h5,
+.legends_info2 h5 {
+    color: var(--sec_clr);
+}
+
 .legends_radio2 {
     display: flex;
     color: #80CAEE;

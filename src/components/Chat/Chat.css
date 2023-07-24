@@ -1,0 +1,31 @@
+.chat_user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.chat_user_info {
+    display: flex;
+    padding: 0.725rem 0;
+    align-items: center;
+    gap: 0.725rem;
+}
+
+.chat_user_info img {
+    width: 3.5rem;
+}
+
+.chat_user_detail {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.chat_span {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.625rem;
+    background-color: var(--card_icon);
+    border-radius: 0.25rem;
+    color: white;
+}

@@ -37,6 +37,10 @@
     align-items: flex-end;
 }
 
+.card_info h5 {
+    color: var(--sec_clr);
+}
+
 .card_info_2 {
     color: #28C08E;
 }

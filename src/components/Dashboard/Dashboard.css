@@ -13,7 +13,8 @@
 
 }
 
-.table_info {
+.table_info,
+.chat_info {
     margin-bottom: 1rem;
 }
 
