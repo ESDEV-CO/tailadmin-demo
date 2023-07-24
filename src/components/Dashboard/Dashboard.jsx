@@ -3,7 +3,7 @@ import "./Dashboard.css";
 import Cards from "../Cards/Cards";
 import Graphs1 from "../Graphs1/Graphs1";
 import Graphs2 from "../Graphs2/Graphs2";
-// import Table from "../Table/Table";
+import Table from "../Table/Table";
 import Chat from "../Chat/Chat";
 
 const Dashboard = () => {
@@ -19,8 +19,15 @@ const Dashboard = () => {
         <Graphs2 />
       </section>
       <section className="dashboard_tables">
-        <div>{/* <Table /> */}</div>
-        <div>
+        <div className="dash_table">
+          <div className="table_info">
+            <h2>Region Labels</h2>
+          </div>
+          <div className="table_data">
+            <Table />
+          </div>
+        </div>
+        <div className="dash_chat">
           <Chat />
         </div>
       </section>

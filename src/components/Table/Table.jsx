@@ -5,72 +5,62 @@ const Table = () => {
   return (
     <table className="table">
       <tbody>
-        <tr>
-          <th scope="col">Sr. No.</th>
-          <th scope="col">Name</th>
-          <th scope="col">Course</th>
-          <th scope="col">Fees</th>
-          <th scope="col">Due date</th>
+        <tr className="first_row">
+          <th scope="col">Source</th>
+          <th scope="col">visitors</th>
+          <th scope="col">revenues</th>
+          <th scope="col">sales</th>
+          <th scope="col">conversion</th>
         </tr>
-        <tr>
-          <td>192</td>
+        <tr className="second_row">
           <td className="user_info_data">
-            <div className="user_info">
-              <img src={require("../../assets/8.jpg")} alt="8" />
-              <p>John Doe</p>
-            </div>
+            <img src={require("../../assets/google.png")} alt="google" />
+            <p>Google</p>
           </td>
-          <td>Bsc.</td>
-          <td>$3999</td>
-          <td>03/16/2019</td>
+          <td>3.5K</td>
+          <td>$5,768</td>
+          <td>590</td>
+          <td>4.8%</td>
         </tr>
-        <tr>
-          <td>204</td>
+        <tr className="third_row">
           <td className="user_info_data">
-            <div className="user_info">
-              <img src={require("../../assets/7.jpg")} alt="7" />
-              <p>Katty Johnson</p>
-            </div>
+            <img src={require("../../assets/twitter.png")} alt="twitter" />
+            <p>Twitter</p>
           </td>
-          <td>Comm.</td>
-          <td>$1599</td>
-          <td>03/22/2019</td>
+          <td>2.2K</td>
+          <td>$4,635</td>
+          <td>467</td>
+          <td>4.3%</td>
         </tr>
-        <tr>
-          <td>356</td>
+        <tr className="fourth_row">
           <td className="user_info_data">
-            <div className="user_info">
-              <img src={require("../../assets/9.jpg")} alt="9" />
-              <p>Matt Parker</p>
-            </div>
+            <img src={require("../../assets/github.png")} alt="github" />
+            <p>Github</p>
           </td>
-          <td>Scien.</td>
-          <td>$10999</td>
-          <td>04/04/2019</td>
+          <td>2.1K</td>
+          <td>$4,290</td>
+          <td>420</td>
+          <td>3.7%</td>
         </tr>
-        <tr>
-          <td>1007</td>
+        <tr className="fifth_row">
           <td className="user_info_data">
-            <div className="user_info">
-              <img src={require("../../assets/6.jpg")} alt="6" />
-              <p>Nicol John</p>
-            </div>
+            <img src={require("../../assets/vimeo.png")} alt="Vimeo" />
+            <p>Vimeo</p>
           </td>
-          <td>Comm.</td>
-          <td>$1599</td>
-          <td>04/15/2019</td>
+          <td>1.5K</td>
+          <td>$3,580</td>
+          <td>389</td>
+          <td>2.5%</td>
         </tr>
-        <tr>
-          <td>1008</td>
+        <tr className="sixth_row">
           <td className="user_info_data">
-            <div className="user_info">
-              <img src={require("../../assets/5.jpg")} alt="5" />
-              <p>Jackline Peter</p>
-            </div>
+            <img src={require("../../assets/fb.png")} alt="FB" />
+            <p>Facebook</p>
           </td>
-          <td>Comm.</td>
-          <td>$1599</td>
-          <td>04/29/2019</td>
+          <td>1.2K</td>
+          <td>$2,740</td>
+          <td>230</td>
+          <td>1.9%</td>
         </tr>
       </tbody>
     </table>
