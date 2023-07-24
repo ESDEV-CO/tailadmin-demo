@@ -1,5 +1,9 @@
-import React from "react";
+import Chart from "chart.js/auto";
+import { CategoryScale } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
+import "./DonutPieChart.css";
+
+Chart.register(CategoryScale);
 
 const DonutPieChart = () => {
   const data = {
