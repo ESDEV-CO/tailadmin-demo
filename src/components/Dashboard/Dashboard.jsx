@@ -10,26 +10,21 @@ import Chat from "../Chat/Chat";
 const Dashboard = () => {
   return (
     <div className="dashboard_main">
-      <div className="dash_nav">
-        <Navbar />
-      </div>
-      <div className="dash_dash">
-        <section className="dashboard_cards">
-          <Cards />
-        </section>
-        <section className="dashboard_graph1">
-          <Graphs1 />
-        </section>
-        <section className="dashboard_graph2">
-          <Graphs2 />
-        </section>
-        <section className="dashboard_tables">
-          <div>{/* <Table /> */}</div>
-          <div>
-            <Chat />
-          </div>
-        </section>
-      </div>
+      <section className="dashboard_cards">
+        <Cards />
+      </section>
+      <section className="dashboard_graph1">
+        <Graphs1 />
+      </section>
+      <section className="dashboard_graph2">
+        <Graphs2 />
+      </section>
+      <section className="dashboard_tables">
+        <div>{/* <Table /> */}</div>
+        <div>
+          <Chat />
+        </div>
+      </section>
     </div>
   );
 };

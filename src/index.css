@@ -53,15 +53,37 @@ section {
 
 .dash_container {
   display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.Aside {
-  flex: 2.85;
+.container_side {
+  flex: 2;
   background: var(--pri_clr);
+  overflow-y: scroll;
 }
 
-.Dashboard {
-  flex: 7.15;
+.container_side::-webkit-scrollbar {
+  display: none;
+}
+
+.container_dash {
+  width: 100%;
+  flex: 8;
+  overflow-y: scroll;
+}
+
+.dash_nav {
+  position: fixed;
+  top: 0;
+  right: 1rem;
+  z-index: 999;
+  width: 79%;
+}
+
+.dash_db {
+  margin-top: 8%;
 }
 
 h1 {
