@@ -3,6 +3,7 @@ import "./Graphs1.css";
 
 import { IoIosRadioButtonOn } from "react-icons/io";
 import { AiOutlineDown } from "react-icons/ai";
+// import { BarChart, LineChart } from "../Charts/Charts";
 import AreaChart from "../Charts/Areachart";
 import StackedBarChart from "../Charts/Stackedbar";
 const Graphs1 = () => {

@@ -23,16 +23,6 @@ const StackedBarChart = () => {
   };
 
   const options = {
-    scales: {
-      x: {
-        stacked: true, // Enable stacked bars on the x-axis
-      },
-      y: {
-        stacked: true, // Enable stacked bars on the y-axis
-        beginAtZero: true,
-        max: 100, // Set the maximum value for the y-axis to 80
-      },
-    },
     plugins: {
       legend: {
         display: false,

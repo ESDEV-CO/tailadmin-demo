@@ -1,6 +1,5 @@
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
-import "./DonutPieChart.css"; // Import custom CSS file
 
 const DonutPieChart = () => {
   const data = {
@@ -20,22 +19,6 @@ const DonutPieChart = () => {
       legend: {
         display: true,
         position: "bottom",
-        align: "center",
-        labels: {
-          generateLabels: function (chart) {
-            const data = chart.data;
-            if (data.labels.length && data.datasets.length) {
-              return data.labels.map((label, i) => ({
-                text: `${label} (${data.datasets[0].data[i]}%)`,
-                fillStyle: data.datasets[0].backgroundColor[i],
-                hidden:
-                  isNaN(data.datasets[0].data[i]) ||
-                  chart.getDatasetMeta(0).data[i].hidden,
-              }));
-            }
-            return [];
-          },
-        },
       },
     },
   };
