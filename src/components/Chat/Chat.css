@@ -3,11 +3,11 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    padding: 0.725rem 1.875rem;
 }
 
 .chat_user_info {
     display: flex;
-    padding: 0.725rem 0;
     align-items: center;
     gap: 0.725rem;
 }
@@ -78,4 +78,10 @@
     border-radius: 50%;
     bottom: 0.25rem;
     right: 0;
+}
+
+@media (min-width:1280px) {
+    .chat_user {
+        padding: 0.725rem 0;
+    }
 }

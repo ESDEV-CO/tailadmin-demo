@@ -21,7 +21,7 @@ const Dashboard = () => {
       <section className="dashboard_tables">
         <div className="dash_table">
           <div className="table_info">
-            <h2>Region Labels</h2>
+            <h2>Top Channels</h2>
           </div>
           <div className="table_data">
             <Table />

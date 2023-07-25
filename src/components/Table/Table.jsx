@@ -18,9 +18,9 @@ const Table = () => {
             <p>Google</p>
           </td>
           <td>3.5K</td>
-          <td>$5,768</td>
+          <td className="col_green">$5,768</td>
           <td>590</td>
-          <td>4.8%</td>
+          <td className="col_blue">4.8%</td>
         </tr>
         <tr className="third_row">
           <td className="user_info_data">
@@ -28,9 +28,9 @@ const Table = () => {
             <p>Twitter</p>
           </td>
           <td>2.2K</td>
-          <td>$4,635</td>
+          <td className="col_green">$4,635</td>
           <td>467</td>
-          <td>4.3%</td>
+          <td className="col_blue">4.3%</td>
         </tr>
         <tr className="fourth_row">
           <td className="user_info_data">
@@ -38,9 +38,9 @@ const Table = () => {
             <p>Github</p>
           </td>
           <td>2.1K</td>
-          <td>$4,290</td>
+          <td className="col_green">$4,290</td>
           <td>420</td>
-          <td>3.7%</td>
+          <td className="col_blue">3.7%</td>
         </tr>
         <tr className="fifth_row">
           <td className="user_info_data">
@@ -48,9 +48,9 @@ const Table = () => {
             <p>Vimeo</p>
           </td>
           <td>1.5K</td>
-          <td>$3,580</td>
+          <td className="col_green">$3,580</td>
           <td>389</td>
-          <td>2.5%</td>
+          <td className="col_blue">2.5%</td>
         </tr>
         <tr className="sixth_row">
           <td className="user_info_data">
@@ -58,9 +58,9 @@ const Table = () => {
             <p>Facebook</p>
           </td>
           <td>1.2K</td>
-          <td>$2,740</td>
+          <td className="col_green">$2,740</td>
           <td>230</td>
-          <td>1.9%</td>
+          <td className="col_blue">1.9%</td>
         </tr>
       </tbody>
     </table>
