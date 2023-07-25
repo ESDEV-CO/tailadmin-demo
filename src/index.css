@@ -55,35 +55,29 @@ section {
   display: flex;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container_side {
-  flex: 2;
-  background: var(--pri_clr);
-  overflow-y: scroll;
-}
-
-.container_side::-webkit-scrollbar {
   display: none;
 }
 
+
 .container_dash {
   width: 100%;
-  flex: 8;
-  overflow-y: scroll;
+  margin-top: auto;
 }
 
 .dash_nav {
   position: fixed;
+  width: 100%;
+  right: 0;
   top: 0;
-  right: 1rem;
   z-index: 999;
-  width: 79%;
 }
 
 .dash_db {
-  margin-top: 8%;
+  margin-top: 9%;
 }
 
 h1 {
@@ -135,15 +129,39 @@ button {
   color: var(--pri_clr);
 }
 
-@media (max-width:1024px) {
+@media (min-width:1024px) {
+  .dash_container {
+    overflow: hidden;
+  }
+
   .container_side {
+    display: flex;
+    flex: 2.15;
+    background: var(--pri_clr);
+    overflow-y: scroll;
+  }
+
+  .container_dash {
+    flex: 7.85;
+    margin-top: 0;
+    overflow-y: scroll;
+  }
+
+  .container_side::-webkit-scrollbar {
     display: none;
   }
 
   .dash_nav {
-
-    width: 100%;
-    right: 0;
-
+    right: 1rem;
+    width: 79%;
   }
+
+}
+
+@media (min-width:768px) {
+  .dash_db {
+    margin-top: 8%;
+  }
+
+
 }

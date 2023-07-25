@@ -19,10 +19,10 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar_search">
-        <span>
+        <span className="search_logo">
           <BsSearch />
         </span>
-        <input type="text" placeholder="Type to search" />
+        <input type="text" placeholder="Type to search..." />
       </div>
       <div className="navbar_user">
         <div className="nav_user_notification">

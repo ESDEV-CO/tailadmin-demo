@@ -2,9 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 15%;
-    padding: 1rem 1.25rem;
+    padding: 1rem;
     background-color: white;
     box-shadow: 0 1px 5px var(--sec_clr);
 }
@@ -61,10 +59,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 0.5rem;
     color: var(--sec_clr);
     border: none;
-    padding: 0.25rem 0.5rem;
 }
 
 .navbar_search input {
@@ -72,6 +68,15 @@
     border: none;
     font-size: 1rem;
     opacity: 0.7;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.search_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
 }
 
 .nav_user_notification {
@@ -97,12 +102,7 @@
 }
 
 .nav_user_info {
-    display: flex;
-    flex-direction: column;
-}
-
-.nav_user_info h6 {
-    color: var(--sec_clr);
+    display: none;
 }
 
 .nav_user_info :first-child {
@@ -112,51 +112,68 @@
     color: #444B58;
 }
 
-/* .user_info :nth-child(2) {
-    font-size: .75rem;
-    line-height: 1rem;
-    font-weight: 500;
-    color: #B2BAC6;
-} */
-
 .nav_user_login img {
-    width: 3rem;
+    width: 2.5rem;
     border-radius: 50%;
 }
 
 .mobile_logo {
-    display: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
-@media (max-width:1024px) {
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.375rem;
+    border-width: 1px;
+    border-radius: 0.125rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:640px) {
+    .navbar_search {
+        display: none;
+    }
+}
+
+@media (min-width:1025px) {
+    .nav_user_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_user_info h6 {
+        color: var(--sec_clr);
+    }
+
     .mobile_logo {
-        display: flex;
-        gap: 1rem;
-        align-items: center;
+        display: none;
     }
+}
 
-    .navbar_menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.375rem;
-        border-width: 1px;
-        border-radius: 0.125rem;
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-        font-size: 1.5rem;
-    }
-
-    .navbar_logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
+@media (min-width:768px) {
     .navbar {
         padding: 1rem 1.5rem;
+
     }
 
-    .nav_user_info {
-        display: none;
+    .nav_user_login img {
+        width: 3rem;
+    }
+}
+
+@media (min-width: 375px) {
+    .navbar_user {
+        gap: 1.75rem;
     }
 }
