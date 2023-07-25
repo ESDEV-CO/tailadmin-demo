@@ -146,7 +146,7 @@
     }
 }
 
-@media (min-width:1025px) {
+@media (min-width:1024px) {
     .nav_user_info {
         display: flex;
         flex-direction: column;

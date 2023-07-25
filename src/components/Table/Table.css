@@ -53,3 +53,11 @@ th {
 .col_blue {
     color: #299CE6;
 }
+
+@media (min-width:1280px) {
+
+    td,
+    th {
+        padding: 1.25rem;
+    }
+}

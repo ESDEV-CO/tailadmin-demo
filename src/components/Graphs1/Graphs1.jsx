@@ -41,7 +41,7 @@ const Graphs1 = () => {
           <div className="barchat_info_heading">
             <h2>Profit this week</h2>
             <button>
-              Monthly <AiOutlineDown />
+              The Week <AiOutlineDown />
             </button>
           </div>
           <div className="barchat_info_legends">
