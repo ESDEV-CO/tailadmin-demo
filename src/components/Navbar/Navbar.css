@@ -123,3 +123,40 @@
     width: 3rem;
     border-radius: 50%;
 }
+
+.mobile_logo {
+    display: none;
+}
+
+@media (max-width:1024px) {
+    .mobile_logo {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .navbar_menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.375rem;
+        border-width: 1px;
+        border-radius: 0.125rem;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+        font-size: 1.5rem;
+    }
+
+    .navbar_logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar {
+        padding: 1rem 1.5rem;
+    }
+
+    .nav_user_info {
+        display: none;
+    }
+}

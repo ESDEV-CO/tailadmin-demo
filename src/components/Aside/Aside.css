@@ -1,4 +1,4 @@
-button {
+.aside_container button {
     color: var(--aside_icon);
     font-size: 1.25rem;
 }

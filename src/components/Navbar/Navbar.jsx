@@ -5,10 +5,19 @@ import { BsSearch } from "react-icons/bs";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { AiOutlineMessage } from "react-icons/ai";
 import { AiOutlineDown } from "react-icons/ai";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   return (
     <div className="navbar">
+      <div className="mobile_logo">
+        <button className="navbar_menu">
+          <GiHamburgerMenu />
+        </button>
+        <div className="navbar_logo">
+          <img src={require("../../assets/logo-icon.png")} alt="logo" />
+        </div>
+      </div>
       <div className="navbar_search">
         <span>
           <BsSearch />
