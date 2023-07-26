@@ -3,6 +3,8 @@ import "./Graphs2.css";
 import { AiOutlineDown } from "react-icons/ai";
 import DonutPieChart from "../Charts/DonutPieChart";
 import { IoIosRadioButtonOn } from "react-icons/io";
+import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlineMinus } from "react-icons/ai";
 
 const Graphs2 = () => {
   return (
@@ -62,6 +64,14 @@ const Graphs2 = () => {
         </div>
         <div className="second_graph">
           <img src={require("../../assets/map.png")} alt="Map" />
+          <div className="second_graph_zoom">
+            <button className="zoom_btn">
+              <AiOutlinePlus />
+            </button>
+            <button className="zoom_btn">
+              <AiOutlineMinus />
+            </button>
+          </div>
         </div>
       </div>
     </div>
