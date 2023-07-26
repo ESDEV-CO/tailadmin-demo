@@ -64,6 +64,11 @@ h3 {
   font-weight: 500;
 }
 
+p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 h4 {
   font-size: 0.875rem;
   font-weight: 600;
@@ -121,22 +126,15 @@ button {
 }
 
 .dash_db {
-  margin-top: 5rem;
+  margin-top: 4.5rem;
 }
 
-/* @media (max-width:768px) {
+@media (min-width:768px) {
   .dash_db {
-    margin-top: 20%;
+    margin-top: 5rem;
   }
 
 }
-
-@media (max-width:1024px) {
-  .dash_db {
-    margin-top: 7%;
-  }
-
-} */
 
 @media (min-width:1024px) {
 

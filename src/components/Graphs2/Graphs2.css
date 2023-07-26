@@ -24,6 +24,7 @@
     justify-content: space-between;
     align-items: center;
     height: 20%;
+    flex-wrap: wrap;
 }
 
 .first_info button {
@@ -61,7 +62,7 @@
 
 .first_legends {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     height: 20%;
 }
 
@@ -121,6 +122,14 @@
 .zoom_btn :active {
     background-color: var(--card_icon);
     color: white;
+}
+
+@media (max-width:640px) {
+    .first_legends {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        height: 20%;
+    }
 }
 
 @media (min-width:1280px) {

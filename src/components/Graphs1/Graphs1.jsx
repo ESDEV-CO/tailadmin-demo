@@ -15,14 +15,14 @@ const Graphs1 = () => {
               <IoIosRadioButtonOn />
             </span>
             <span className="legends_info">
-              <h2>Total Revenue</h2>
+              <p>Total Revenue</p>
               <h5>12.04.2022 - 12.05-2022</h5>
             </span>
             <span className="legends_radio2">
               <IoIosRadioButtonOn />
             </span>
             <span className="legends_info2">
-              <h2>Total Sales</h2>
+              <p>Total Sales</p>
               <h5>12.04.2022 - 12.05-2022</h5>
             </span>
           </div>
